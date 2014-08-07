@@ -1,0 +1,4 @@
+azulblog/
+migrations/
+*.pyc
+manage.py

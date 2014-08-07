@@ -1,0 +1,14 @@
+{% extends "bloginclude/base.html" %}
+
+{% block main %}
+    <h1>{{ post.title }}</h1>
+    {% if post.image %}
+        <img src="{{ post.image.url }}" class="img-responsive" />
+    {% endif %}
+    <div class="post-body">
+        {{ post.body|safe }}
+    </div>
+    <div class="post-footer">
+        Written on {{ post.create_date }} by {{ post.author }}
+    </div>
+{% endblock %}
